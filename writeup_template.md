@@ -122,7 +122,7 @@ From a quality image standard, all the images have a reasonable one. Although, f
 Here are five German traffic signs that I found on the web:
 
 ![sign_1](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/Images/Sign1.png) ![sign_2](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/Images/Sign2.jpg) ![sign_3](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/Images/Sign3.jpg)
-![sign_4](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/Images/Sign4.jpg) ![sign_5](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/Images/Sign5.jpg)
+![sign_4](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/Images/Sign4.jpg) ![sign_5](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/Images/Sign5.jpg)
 
 The first image might be difficult to classify because the model isn't trained well with respect to 60kmph class. It also depends on the particular image if a particular image is off in the standards of trained model then it won't predict properly and that's why we train the model on various versions of the same data point.
 
