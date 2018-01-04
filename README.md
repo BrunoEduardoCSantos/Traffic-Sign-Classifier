@@ -10,9 +10,24 @@ A detailed description of the project is on writeup file: [writeup_template](htt
 
 ## Setup ##
 
-1. Install [Anaconda](https://anaconda.org/anaconda/continuum-docs)
-2. Setup conda environment with python 3.5 and tensorflow
-3. Run the following command
+This project requires **Python 3.5** and the following Python libraries installed:
+
+- [Jupyter](http://jupyter.org/)
+- [NumPy](http://www.numpy.org/)
+- [SciPy](https://www.scipy.org/)
+- [scikit-learn](http://scikit-learn.org/)
+- [TensorFlow](http://tensorflow.org)
+- [Matplotlib](http://matplotlib.org/)
+- [Pandas](http://pandas.pydata.org/) (Optional)
+
+Run this command at the terminal prompt to install [OpenCV](http://opencv.org/). Useful for image processing:
+
+- `conda install -c https://conda.anaconda.org/menpo opencv3`
+
+# Usage
+
+Run the following command to clone project:
+
 ```sh
 git clone https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier
 jupyter notebook Traffic_Sign_Classifier.ipynb
