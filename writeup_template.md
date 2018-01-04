@@ -3,7 +3,7 @@
 
 **Build a Traffic Sign Recognition Project**
 
-You're reading it! and here is a link to my [project code](https://github.com/BrunoEduardoCSantos/SelfDrivingCarNanodegreeUdacity/blob/master/P2-Traffic-Sign-Classifier/Traffic_Sign_Classifier.ipynb)
+You're reading it! and here is a link to my [project code](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/Traffic_Sign_Classifier.ipynb)
 
 # Dataset Exploration #
 
@@ -18,7 +18,7 @@ signs data set:
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data is distributed for each of the 43 classes on train and test datasets.
 
-![Class Distribution](https://github.com/BrunoEduardoCSantos/SelfDrivingCarNanodegreeUdacity/blob/master/P2-Traffic-Sign-Classifier/WriteUpImages/distr_class.png)
+![Class Distribution](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/WriteUpImages/distr_class.png)
 
 From the previous plot we can tell that test and traininig dataset have same distribution which allows our model generalize better.
 On the other, both train and test dataset have quite unbalanced classes, i.e., the class distribution is not uniform which means the model will more likely to have higher accuracy to certain classes.  Maybe during our model we should try to balanced classes to obtain higher model accuracy.
@@ -32,14 +32,14 @@ different color layers.As result, we will get a 2D matrix  representing the imag
 
 Here is an example of a traffic sign image before and after grayscaling.
 
-![Grayscale Transformation](https://github.com/BrunoEduardoCSantos/SelfDrivingCarNanodegreeUdacity/blob/master/P2-Traffic-Sign-Classifier/WriteUpImages/GrayscaleTransform.png)
+![Grayscale Transformation](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/WriteUpImages/GrayscaleTransform.png)
 
 As a second step, I decided to use histogram equalization technique because it allows grayscale images to show more distinct images. Since histogram equalization spreads out intensity values along the total range of values in order to
 achieve higher contrast, this will help our model to classify better since it evidences traffic signs edges more clearly.
 
 Here is an example of a traffic sign image before and after histogram equalization on the grayscale images.
 
-![Histogram_Equalization Transformation](https://github.com/BrunoEduardoCSantos/SelfDrivingCarNanodegreeUdacity/blob/master/P2-Traffic-Sign-Classifier/WriteUpImages/HistEquTransform.png)
+![Histogram_Equalization Transformation](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/WriteUpImages/HistEquTransform.png)
 
 As a last step, I normalized the image data because Deep learn networks learn faster for normalized input features . In addition, the pixel intensity will have more similar range values and as result it will help to find more suitables weights. It is also important because since we will be using weight sharing whereas similar range input values will have an extremelly important role.
 
@@ -48,12 +48,12 @@ As a last step, I normalized the image data because Deep learn networks learn fa
 I decided to generate additional data because my model was overfitting. 
 Here it is a plot of loss and accuracy before augmenting data.
 
-![Loss_Accuracy_Initial](https://github.com/BrunoEduardoCSantos/SelfDrivingCarNanodegreeUdacity/blob/master/P2-Traffic-Sign-Classifier/WriteUpImages/before_augmented_Data.png)
+![Loss_Accuracy_Initial](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/WriteUpImages/before_augmented_Data.png)
 
 The accuracy for training data is larger than test one. Clearly, this is a strong indication of overfitting. In addition, the loss for test data is larger than training one, which confirms our assumption of overfitting. 
 After augmenting the training data, I obtained the following loss and accuracy plots:
 
-![Loss_Accuracy_Augmented](https://github.com/BrunoEduardoCSantos/SelfDrivingCarNanodegreeUdacity/blob/master/P2-Traffic-Sign-Classifier/WriteUpImages/LossTrainVsLossValidationAugDeep2.png)
+![Loss_Accuracy_Augmented](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/WriteUpImages/LossTrainVsLossValidationAugDeep2.png)
 
 From previous plot, I can tell that the model is not overfitting anymore since the accuracy for test data increase and overtook training data one. Although, the error for training data set increased, which related with distortation applied during augmented data generation. In further detail, since the images are twisted it will increase the error, but on the other hand, it will train better the model to recognize the same image under different image properties.
 
@@ -65,11 +65,11 @@ To add more data to the the data set, I used the following affine transformation
 
 Here is an example of an original image and an augmented image:
 
-![Augmented_Data](https://github.com/BrunoEduardoCSantos/SelfDrivingCarNanodegreeUdacity/blob/master/P2-Traffic-Sign-Classifier/WriteUpImages/AugmenteData.png)
+![Augmented_Data](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/WriteUpImages/AugmenteData.png)
 
 The difference between the original data set and the augmented data set is that the number of samples just doubled to 69598.The distribution after generating the augmented dataset was the following:
 
-![Augmented_Data_class_dist](https://github.com/BrunoEduardoCSantos/SelfDrivingCarNanodegreeUdacity/blob/master/P2-Traffic-Sign-Classifier/WriteUpImages/distr_class_aug.png)
+![Augmented_Data_class_dist](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/WriteUpImages/distr_class_aug.png)
 
 The distribution of classes hold the same profile as expected. In further detail, I generated a new augmented dataset keeping in mind not to change initial dataset distribution and apply a different transformation for each image. Although, as a future work, generate augmented data in order to balance each class will be a clear option.
 
@@ -121,8 +121,8 @@ From a quality image standard, all the images have a reasonable one. Although, f
 
 Here are five German traffic signs that I found on the web:
 
-![sign_1](https://github.com/BrunoEduardoCSantos/SelfDrivingCarNanodegreeUdacity/blob/master/P2-Traffic-Sign-Classifier/Images/Sign1.png) ![sign_2](https://github.com/BrunoEduardoCSantos/SelfDrivingCarNanodegreeUdacity/blob/master/P2-Traffic-Sign-Classifier/Images/Sign2.jpg) ![sign_3](https://github.com/BrunoEduardoCSantos/SelfDrivingCarNanodegreeUdacity/blob/master/P2-Traffic-Sign-Classifier/Images/Sign3.jpg)
-![sign_4](https://github.com/BrunoEduardoCSantos/SelfDrivingCarNanodegreeUdacity/blob/master/P2-Traffic-Sign-Classifier/Images/Sign4.jpg) ![sign_5](https://github.com/BrunoEduardoCSantos/SelfDrivingCarNanodegreeUdacity/blob/master/P2-Traffic-Sign-Classifier/Images/Sign5.jpg)
+![sign_1](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/Images/Sign1.png) ![sign_2](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/Images/Sign2.jpg) ![sign_3](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/Images/Sign3.jpg)
+![sign_4](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/Images/Sign4.jpg) ![sign_5](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/Images/Sign5.jpg)
 
 The first image might be difficult to classify because the model isn't trained well with respect to 60kmph class. It also depends on the particular image if a particular image is off in the standards of trained model then it won't predict properly and that's why we train the model on various versions of the same data point.
 
@@ -159,6 +159,6 @@ For the first image, the model is relatively sure that this is a speed limit (60
 For the second image, the model has a low probability (0.34) for stop sign, but it predicted it right. 
 Regarding the rest of images, there is a high probability(>0.9) and the prediction is the right one.
 Finally, it follows the top 5 softmax probabilities per sign:
-![sign_1](https://github.com/BrunoEduardoCSantos/SelfDrivingCarNanodegreeUdacity/blob/master/P2-Traffic-Sign-Classifier/WriteUpImages/Hist0.png) ![sign_2](https://github.com/BrunoEduardoCSantos/SelfDrivingCarNanodegreeUdacity/blob/master/P2-Traffic-Sign-Classifier/WriteUpImages/Hist1.png) ![sign_3](https://github.com/BrunoEduardoCSantos/SelfDrivingCarNanodegreeUdacity/blob/master/P2-Traffic-Sign-Classifier/WriteUpImages/Hist2.png)
-![sign_4](https://github.com/BrunoEduardoCSantos/SelfDrivingCarNanodegreeUdacity/blob/master/P2-Traffic-Sign-Classifier/WriteUpImages/Hist3.png) ![sign_5](https://github.com/BrunoEduardoCSantos/SelfDrivingCarNanodegreeUdacity/blob/master/P2-Traffic-Sign-Classifier/WriteUpImages/Hist4.png)
+![sign_1](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/WriteUpImages/Hist0.png) ![sign_2](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/WriteUpImages/Hist1.png) ![sign_3](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/WriteUpImages/Hist2.png)
+![sign_4](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/WriteUpImages/Hist3.png) ![sign_5](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/WriteUpImages/Hist4.png)
 
