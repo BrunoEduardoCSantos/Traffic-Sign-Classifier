@@ -10,7 +10,9 @@ A detailed description of the project is on writeup file: [writeup_template].
 
 ## Setup ##
 
-1. Download the data set from:
+1. Install [Anaconda](https://anaconda.org/anaconda/continuum-docs)
+2. Setup conda environment with python 3.5 and tensorflow
+3. Run the following command
 ```sh
 git clone https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier
 jupyter notebook Traffic_Sign_Classifier.ipynb
