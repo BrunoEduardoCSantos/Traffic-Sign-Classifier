@@ -5,7 +5,7 @@ In this project, a deep neural networks and convolutional neural networks was im
 
 The base code is contained in the following IPython notebook: [Traffic_Sign_Classifier](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/Traffic_Sign_Classifier.ipynb).
 
-A detailed description of the project is on writeup file: [writeup_template]. 
+A detailed description of the project is on writeup file: [writeup_template](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/writeup_template.md). 
 
 
 ## Setup ##
