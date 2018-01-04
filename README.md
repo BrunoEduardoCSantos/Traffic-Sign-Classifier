@@ -36,3 +36,7 @@ jupyter notebook Traffic_Sign_Classifier.ipynb
 ## Softmax probabilities for 5 German Traffic Signs ##
 ![sign_1](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/WriteUpImages/Hist0.png) ![sign_2](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/WriteUpImages/Hist1.png) ![sign_3](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/WriteUpImages/Hist2.png)
 ![sign_4](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/WriteUpImages/Hist3.png) ![sign_5](https://github.com/BrunoEduardoCSantos/Traffic-Sign-Classifier/blob/master/WriteUpImages/Hist4.png)
+
+
+# Disclamer
+This project was cloned from [Udacity Traffic Sign project](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project) in the context of [Self-Driving Carnanodegree](https://eu.udacity.com/course/self-driving-car-engineer-nanodegree--nd013).
